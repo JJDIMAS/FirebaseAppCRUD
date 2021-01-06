@@ -16,17 +16,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        validarSesion()
+    }
+
+    func validarSesion(){
         if Auth.auth().currentUser != nil {
           // User is signed in.
             performSegue(withIdentifier: "menuPrincipal", sender: self)
-        
+        }else{
+            print("come by")
         }
     }
 
-    @IBAction func registrar(_ sender: UIButton) {
-        
-    }
     
     @IBAction func sesion(_ sender: UIButton) {
         

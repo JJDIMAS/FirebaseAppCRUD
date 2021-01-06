@@ -10,4 +10,5 @@ target 'FirebaseApp' do
 	pod 'Firebase/Auth'
 	pod 'Firebase'
 	pod 'Firebase/Firestore'
+	pod 'Firebase/Core'
 end
