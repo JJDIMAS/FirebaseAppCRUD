@@ -18,8 +18,23 @@ class AlumnosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-
+        cargarDatos()
         // Do any additional setup after loading the view.
+    }
+    func cargarDatos(){
+        let db = Firestore.firestore()
+        db.collection("contactos").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err.localizedDescription)")
+            } else {
+                //Se obtuvieron los datos correctamente
+                for document in querySnapshot!.documents {
+                    self.contactos.append(document.data()["nombre"] as! String)
+                    print("\(document.documentID) => \(document.data())")
+                }
+                self.alumnosTable.reloadData()
+            }
+        }
     }
     
     @IBAction func cerrarSesion(_ sender: UIBarButtonItem) {
@@ -52,7 +67,7 @@ class AlumnosViewController: UIViewController {
         }
         alerta.addAction(actionAceptar)
         present(alerta, animated: true, completion: nil)
-        
+        alumnosTable.reloadData()
         
     }
 }
@@ -64,7 +79,7 @@ extension AlumnosViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = alumnosTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        celda.textLabel?.text = "Hola"
+        celda.textLabel?.text = contactos[indexPath.row]
         return celda
     }
     
