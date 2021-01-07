@@ -17,6 +17,7 @@
 		68873C8C25A2FD1300ACE48D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68873C8B25A2FD1300ACE48D /* GoogleService-Info.plist */; };
 		68873C9E25A30C0900ACE48D /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68873C9D25A30C0900ACE48D /* RegistroViewController.swift */; };
 		68C2E45825A454AA00C39C60 /* AlumnosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C2E45725A454AA00C39C60 /* AlumnosViewController.swift */; };
+		68C98A3225A6ABCC00F36E36 /* contacto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C98A3125A6ABCC00F36E36 /* contacto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		68873C8B25A2FD1300ACE48D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		68873C9D25A30C0900ACE48D /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
 		68C2E45725A454AA00C39C60 /* AlumnosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnosViewController.swift; sourceTree = "<group>"; };
+		68C98A3125A6ABCC00F36E36 /* contacto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contacto.swift; sourceTree = "<group>"; };
 		DDC1EFE7C3B925C9E8C28FA5 /* Pods_FirebaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4011D83ED38012484E76BFB /* Pods-FirebaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseApp.release.xcconfig"; path = "Target Support Files/Pods-FirebaseApp/Pods-FirebaseApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 				58F41CB3258952C1006175D7 /* Info.plist */,
 				68873C9D25A30C0900ACE48D /* RegistroViewController.swift */,
 				68C2E45725A454AA00C39C60 /* AlumnosViewController.swift */,
+				68C98A3125A6ABCC00F36E36 /* contacto.swift */,
 			);
 			path = FirebaseApp;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				68873C9E25A30C0900ACE48D /* RegistroViewController.swift in Sources */,
 				58F41CA6258952A7006175D7 /* AppDelegate.swift in Sources */,
 				68C2E45825A454AA00C39C60 /* AlumnosViewController.swift in Sources */,
+				68C98A3225A6ABCC00F36E36 /* contacto.swift in Sources */,
 				58F41CA8258952A7006175D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
